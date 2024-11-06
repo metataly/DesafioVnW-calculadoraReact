@@ -1,0 +1,86 @@
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  background: url("imagens/loopbg.gif") no-repeat center center fixed;
+  background-size: cover;
+}
+
+main {
+  width: 100vw;
+  height: 100vh;
+  font-family: "Playfair display";
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  section {
+    padding: 10vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(128, 0, 128, 0.6);
+    border-radius: 15px;
+
+    h1 {
+      padding: 3vh;
+      font-size: 1.6em;
+    }
+
+    h4 {
+      padding: 2vh;
+    }
+
+    input {
+      padding: 1.5vh;
+      margin-bottom: 2vh;
+      border-radius: 7px;
+      border: none;
+    }
+
+    button {
+      width: 30px;
+      margin: 2px;
+      border-radius: 4px;
+      border: none;
+      cursor: pointer;
+
+      &:hover {
+        background-color: #dda0dd;
+      }
+    }
+  }
+}
+
+@media (max-width: 650px) {
+  section {
+    width: 80vw;
+    height: 90vh;
+  }
+
+  body {
+    font-size: 1.5em;
+  }
+
+  input {
+    width: 50vw;
+    height: 10vh;
+  }
+
+  button {
+    padding: 20px;
+  }
+
+  h4 {
+    font-size: 0.7em;
+  }
+}
